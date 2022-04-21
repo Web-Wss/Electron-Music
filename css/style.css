@@ -1,0 +1,11 @@
+.for_file_drag {
+  width: 100%;
+  height: 400px;
+  background: pink;
+}
+
+webview{
+  width: 100%;
+  height: 400px;
+  
+}

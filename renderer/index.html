@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>本地播放器</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container mt4">
+    <h1>我的播放器</h1>
+    <button type="button" id="add-music-button" class="btn btn-primary btn-lg btn-block mt4">
+      添加歌曲到曲库
+    </button>
+    <br>
+    <div id="tracksList" class="mt-4">
+    </div>
+  </div>
+  <hr>
+
+  <footer class="container navbar-fixed-bottom">
+    <div class="row" id="player-status"></div>
+    <div class="progress">
+      <div class="progress-bar" id="player-progress" role="progressbar" style="width: 0%;">
+        0%
+      </div>
+    </div>
+  </footer>
+  <script>
+    require('./index.js')
+  </script>
+</body>
+
+</html>

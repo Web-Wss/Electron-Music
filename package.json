@@ -1,0 +1,53 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "music player",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --watch main.js --exec electron .",
+    "dist": "electron-builder",
+    "package": "electron-packager . myproject --win --out ./dist --arch=x64 --app-version=1.0.0 --icon=./electron.webp"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build": {
+    "productName": "electron-demo",
+    "directories": {
+      "output": "dist"
+    },
+    "nsis": {
+      "outClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "icon": "./electron.webp",
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ]
+    }
+  },
+  "author": "Wss",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^18.0.3",
+    "electron-builder": "^23.0.3",
+    "electron-packager": "^15.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "electron-store": "^8.0.1",
+    "uuid": "^8.3.2"
+  }
+}

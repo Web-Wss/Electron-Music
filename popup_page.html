@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>这是弹出的子窗口</h2>
+  <button onclick="sendMessageToParent()">向父窗口传递信息</button>
+</body>
+<script>
+  function sendMessageToParent() {
+    window.opener.postMessage({
+      type: 1,
+      message: "这是来自子窗口的问候"
+    })
+  }
+</script>
+
+</html>

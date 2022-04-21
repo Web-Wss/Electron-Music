@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>添加音乐</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container mt4">
+    <h1>添加音乐到曲库</h1>
+    <div id="musicList" class="mb-2">您还未选择任何音乐文件</div>
+
+    <button type="button" id="select-music" class="btn btn-outline-primary btn-lg btn-block mt4">
+      选择音乐
+    </button>
+    <button type="button" id="add-music" class="btn btn-primary btn-lg btn-block mt4">
+      导入音乐
+    </button>
+  </div>
+  <script>
+    require('./add.js')
+  </script>
+</body>
+
+</html>
